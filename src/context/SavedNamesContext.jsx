@@ -7,12 +7,15 @@ const SavedNamesContext = createContext();
 export function SavedNamesProvider({ children }) {
   const [savedNames, setSavedNames] = useState([]);
 
-  const addName = (name) => {
-    setSavedNames((prev) => [...prev, name]);
+  const addName = (character) => {
+    setSavedNames((prev) => {
+      const exists = prev.some((c) => c.name === character.name);
+      return exists ? prev : [...prev, character];
+    });
   };
 
-  const removeName = (name) => {
-    setSavedNames((prev) => prev.filter((n) => n !== name));
+  const removeName = (nameToRemove) => {
+    setSavedNames((prev) => prev.filter((c) => c.name !== nameToRemove));
   };
 
   return (
@@ -22,6 +25,5 @@ export function SavedNamesProvider({ children }) {
   );
 }
 
-// Custom Hook (declared and exported inline)
-const useSavedNames = () => useContext(SavedNamesContext);
-export { useSavedNames };
+// Custom Hook (exported inline)
+export const useSavedNames = () => useContext(SavedNamesContext);
