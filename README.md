@@ -6,7 +6,7 @@ Welcome to **FantasyNameForge**, a whimsical web application that generates fant
 
 ## 📌 Live Site
 
-👉 [Live Demo on Netlify](https://your-netlify-deployment-url.netlify.app)
+👉 [Live Demo on Netlify](https://fantasy-name-forge.netlify.app/)
 
 ---
 
