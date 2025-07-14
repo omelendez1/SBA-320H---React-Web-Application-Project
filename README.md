@@ -127,3 +127,4 @@ This application was built as part of the **SBA 320H React Web Application Proje
 ![character profile ext](public\assets\images\main3.jpg)
 ![test Mpage](https://raw.githubusercontent.com/omelendez1/SBA-320H---React-Web-Application-Project/main/src/assets/images\main1.jpg)
 ---
+![FantasyNameForge Screenshot](https://raw.githubusercontent.com/omelendez1/assets-repo/main/fantasynameforge/main1.jpg)
